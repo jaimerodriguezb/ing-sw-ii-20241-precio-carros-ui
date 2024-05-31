@@ -14,7 +14,7 @@ function useForm() {
       .filter((input) => input.name)
       .reduce((obj, input) => Object.assign(obj, { [input.name]: input.value }), {});
 
-    fetch(`${finalFormEndpoint}?year=${encodeURIComponent(data.anio)}&mileage=${encodeURIComponent(data.kilometraje)}&state=${encodeURIComponent(data.estado)}&make=${encodeURIComponent(data.marca)}&model=${encodeURIComponent(data.modelo)}`, 
+    fetch(`${finalFormEndpoint}?year=${encodeURIComponent(data.anio)}&mileage=${encodeURIComponent(data.kilometgiraje)}&state=${encodeURIComponent(data.estado)}&make=${encodeURIComponent(data.marca)}&model=${encodeURIComponent(data.modelo)}`, 
     {
       method: 'GET',
       headers: {
